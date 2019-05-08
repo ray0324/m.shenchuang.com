@@ -62,6 +62,7 @@ function serve(cb) {
   gulp.watch('src/less/**/*.less', css);
   gulp.watch('src/*.html', html);
   gulp.watch('src/js/*.js', js);
+  gulp.watch('src/images/**/*', images);
   gulp.watch(['*.html', 'css/*.css', 'js/**/*.js', 'images/**/*'], { cwd: 'dist' }, reload);
   cb();
 }
