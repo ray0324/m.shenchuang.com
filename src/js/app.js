@@ -31,23 +31,31 @@ require(["jquery", "fastclick", "swiper", "viewer"], function(
     var $toolbar = $(".toolbar");
     var $nav = $(".nav");
     var $tab = $(".tab");
+    var LOCKED = false;
 
     $toolbar.on("click", function(e) {
       e.stopPropagation();
-
+      console.log(LOCKED);
+      if (LOCKED) return;
+      // 锁定
+      LOCKED = true;
       if (!$(this).hasClass("active")) {
         $(this).addClass("active");
         $dropMenu.show();
+        // 锁定浏览器 禁止滚动
         document.body.style.overflowY = "hidden";
         setTimeout(function() {
           $dropMenu.addClass("active");
-        }, 5);
+          LOCKED = false;
+        }, 0);
       } else {
         $(this).removeClass("active");
         $dropMenu.removeClass("active");
+        // 清除浏览器滚动锁定
         document.body.style = "";
         setTimeout(function() {
           $dropMenu.hide();
+          LOCKED = false;
         }, 350);
       }
     });
@@ -68,6 +76,7 @@ require(["jquery", "fastclick", "swiper", "viewer"], function(
       );
     });
 
+    // tab切换
     $.each($tab, function(idx, ele) {
       var $ele = $(ele);
       console.log($ele);
