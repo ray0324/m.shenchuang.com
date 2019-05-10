@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
+    />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="./vendor/normalize/normalize.min.css" />
+    <link rel="stylesheet" href="./vendor/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="./css/app.min.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- <div class="back">&lt;</div> -->
+      <div class="title">
+        <a class="logo" href="">
+          <img src="./images/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="toolbar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <aside class="drop-menu" style="display:none">
+      <div class="overlay">
+        <nav class="nav">
+          <div class="tab">
+            <div class="tab-head">
+              <div class="tab-head-item cur">新闻</div>
+              <div class="tab-head-item">生活</div>
+              <div class="tab-head-item">办事</div>
+              <div class="tab-head-item">交通</div>
+              <div class="tab-head-item">教育</div>
+              <div class="tab-head-item">房产</div>
+              <div class="tab-head-item">购物</div>
+              <div class="tab-head-item">旅游</div>
+              <div class="tab-head-item">美食</div>
+            </div>
+            <div class="tab-body">
+              <div class="tab-body-item cur">
+                <a href="">城市</a>
+                <a href="">各区</a>
+                <a href="">文教</a>
+                <a href="">医疗健康</a>
+                <a href="">科创</a>
+              </div>
+              <div class="tab-body-item">
+                <a href="">生活小常识</a>
+                <a href="">生活资讯</a>
+                <a href="">人才招聘</a>
+                <a href="">生活提醒</a>
+                <a href="">深圳活动</a>
+              </div>
+              <div class="tab-body-item">
+                <a href="">深圳保障房</a>
+                <a href="">深圳户籍</a>
+                <a href="">车主服务</a>
+                <a href="">生活指南</a>
+                <a href="">深圳公积金</a>
+                <a href="">出入境办理</a>
+                <a href="">深圳婚姻生育</a>
+                <a href="">少儿医保</a>
+              </div>
+              <div class="tab-body-item">
+                <a href="">交通动态</a>
+                <a href="">交通出行</a>
+              </div>
+              <div class="tab-body-item">
+                <a href="">教育资讯</a>
+                <a href="">深圳考试</a>
+                <a href="">深圳幼儿园</a>
+                <a href="">深圳小学</a>
+                <a href="">深圳中学</a>
+              </div>
+              <div class="tab-body-item">
+                <a href="">我要买新房</a>
+                <a href="">我要买二手房</a>
+                <a href="">我要租房</a>
+                <a href="">家居装饰</a>
+                <a href="">房产资讯</a>
+              </div>
+              <div class="tab-body-item">
+                <a href="">购物资讯</a>
+                <a href="">深圳购物</a>
+                <a href="">香港购物</a>
+              </div>
+              <div class="tab-body-item">
+                <a href="">香港旅游</a>
+                <a href="">旅游资讯</a>
+                <a href="">深圳旅游</a>
+                <a href="">周边游</a>
+              </div>
+              <div class="tab-body-item">
+                <a href="">深圳美食</a>
+                <a href="">香港美食</a>
+                <a href="">私人厨房</a>
+                <a href="">烹饪技巧</a>
+                <a href="">美容保健</a>
+                <a href="">美食情报</a>
+                <a href="">推荐食谱</a>
+                <a href="">美食专题</a>
+                <a href="">美食家</a>
+                <a href="">美酒好茶</a>
+                <a href="">深圳美食</a>
+                <a href="">香港美食</a>
+                <a href="">私人厨房</a>
+                <a href="">烹饪技巧</a>
+                <a href="">美容保健</a>
+                <a href="">美食情报</a>
+                <a href="">推荐食谱</a>
+                <a href="">美食专题</a>
+                <a href="">美食家</a>
+                <a href="">美酒好茶</a>
+                <a href="">深圳美食</a>
+                <a href="">香港美食</a>
+                <a href="">私人厨房</a>
+                <a href="">烹饪技巧</a>
+                <a href="">美容保健</a>
+                <a href="">美食情报</a>
+                <a href="">推荐食谱</a>
+                <a href="">美食专题</a>
+                <a href="">美食家</a>
+                <a href="">美酒好茶</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </aside>
+    <main class="main">
+      <ul class="top-nav">
+        <li class="active"><a href="">首页</a></li>
+        <li><a href="">新闻</a></li>
+        <li><a href="">生活</a></li>
+        <li><a href="">办事</a></li>
+        <li><a href="">交通</a></li>
+        <li><a href="">教育</a></li>
+      </ul>
+
+      <div id="banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/slider1.png" alt="" />
+              <h3><a href="">2019深圳车展</a></h3>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider2.png" alt="" />
+              <h3><a href="">深圳车模欣赏</a></h3>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider3.png" alt="" />
+              <h3><a href="">深圳美图秀秀</a></h3>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="menu-list">
+          <div class="row">
+            <a class="item" href=""><i class="i1"></i><span>社保查询</span></a>
+            <a class="item" href=""><i class="i2"></i><span>公积金</span></a>
+            <a class="item" href=""><i class="i3"></i><span>公租房</span></a>
+            <a class="item" href=""><i class="i4"></i><span>福利补贴</span></a>
+          </div>
+          <div class="row">
+            <a class="item" href=""><i class="i5"></i><span>限行预约</span></a>
+            <a class="item" href=""><i class="i6"></i><span>汽车摇号</span></a>
+            <a class="item" href=""><i class="i7"></i><span>预约挂号</span></a>
+            <a class="item" href=""><i class="i8"></i><span>更多</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="tab">
+          <div class="tab-head">
+            <div class="tab-head-item cur">头条聚焦</div>
+            <div class="tab-head-item">常用服务</div>
+            <div class="tab-head-item">便民指南</div>
+          </div>
+          <div class="tab-body">
+            <div class="tab-body-item cur">
+              <div class="media-list">
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-body-item">
+              <div class="media-list">
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-body-item">
+              <div class="media-list">
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+                <div class="media-item">
+                  <div class="desc">
+                    <h3>为方便旅客办理改签，深航推出机票一站式改签服务</h3>
+                    <p><span>福田资讯</span> <time>2019-04-26</time></p>
+                  </div>
+                  <div class="img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./vendor/esl.js" data-main="js/app"></script>
+  </body>
+</html>
