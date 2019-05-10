@@ -17,12 +17,7 @@ require.config({
   }
 });
 
-require(["jquery", "fastclick", "swiper", "viewer"], function(
-  $,
-  FastClick,
-  swiper,
-  viewer
-) {
+require(["jquery", "fastclick", "swiper", "viewer"], function($, FastClick) {
   FastClick.attach(document.body);
 
   //导航条功能代码
@@ -39,6 +34,11 @@ require(["jquery", "fastclick", "swiper", "viewer"], function(
       if (LOCKED) return;
       // 锁定
       LOCKED = true;
+      // 动画完成后解锁
+      setTimeout(function() {
+        LOCKED = false;
+      }, 350);
+
       if (!$(this).hasClass("active")) {
         $(this).addClass("active");
         $dropMenu.show();
@@ -46,7 +46,6 @@ require(["jquery", "fastclick", "swiper", "viewer"], function(
         document.body.style.overflowY = "hidden";
         setTimeout(function() {
           $dropMenu.addClass("active");
-          LOCKED = false;
         }, 0);
       } else {
         $(this).removeClass("active");
@@ -55,7 +54,6 @@ require(["jquery", "fastclick", "swiper", "viewer"], function(
         document.body.style = "";
         setTimeout(function() {
           $dropMenu.hide();
-          LOCKED = false;
         }, 350);
       }
     });

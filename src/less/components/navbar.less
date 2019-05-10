@@ -21,9 +21,9 @@
     width: 44px;
     height: 44px;
     background: url(../images/back.png) center center / 11px 19px no-repeat;
-     + .title{
-       justify-content: center;
-     }
+    + .title {
+      justify-content: center;
+    }
   }
   .title {
     height: 44px;
@@ -85,6 +85,12 @@
   background: rgba(0, 0, 0, 0.35);
   opacity: 0;
   transition: all ease 350ms;
+  &.active {
+    opacity: 1;
+    .nav {
+      left: 0;
+    }
+  }
   .nav {
     position: absolute;
     top: 0;
@@ -136,12 +142,6 @@
           }
         }
       }
-    }
-  }
-  &.active {
-    opacity: 1;
-    .nav {
-      left: 0;
     }
   }
 }
